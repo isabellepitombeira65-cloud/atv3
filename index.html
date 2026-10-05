@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divulgação de Vagas de Estágio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Cadastro de Vagas de Estágio</h1>
+
+  <!-- Formulário de Entrada -->
+  <form id="formVaga">
+    <label for="cargo">Título da Vaga / Cargo:</label>
+    <input type="text" id="cargo" required placeholder="Ex: Desenvolvedor Front-end Trainee">
+
+    <label for="empresa">Empresa:</label>
+    <input type="text" id="empresa" required placeholder="Ex: Tech Solutions">
+
+    <label for="curso">Curso / Área de Atuação:</label>
+    <input type="text" id="curso" required placeholder="Ex: Ciência da Computação">
+
+    <label for="contato">Contato / E-mail:</label>
+    <input type="text" id="contato" required placeholder="Ex: rh@empresa.com">
+
+    <button type="submit">Cadastrar Vaga</button>
+  </form>
+
+  <h2>Vagas Disponíveis</h2>
+
+  <!-- Tabela de Exibição -->
+  <table>
+    <thead>
+      <tr>
+        <th>Cargo</th>
+        <th>Empresa</th>
+        <th>Área / Curso</th>
+        <th>Contato</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaVagas">
+      <!-- As vagas cadastradas aparecerão aqui -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
